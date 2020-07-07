@@ -15,6 +15,14 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
     color: black;
 }
 
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+}
+
 header {
     padding-bottom: 25px;
 }
@@ -24,6 +32,10 @@ header li {
     margin-left: 3%;
     color: #FFFFFF;
     font-family: 'roboto', serif, sans-serif;
+}
+
+header .fa-bars {
+    display: none;
 }
 
 header nav {
@@ -37,19 +49,251 @@ header nav {
 
 h1 {
     font-family: 'petit formal script', serif, sans-serif;
-    font-size: 90px;
-    line-height: 94.3px;
+    font-size: 65px;
+    line-height: 65px;
     color: #FFFFFF;
     width: 40%;
     display: inline-block;
     text-align: right;
+
 }
 
 header img {
     width: 45%;
-    margin-left: 10%;
 }
 
 .text-and-pic {
-    margin-left: 12%;
+    margin-left: 10%;
+    position: relative;
+}
+
+header i {
+    width: 1em;
+    height: 1em;
+    float: right;
+    clear: right;
+    position: absolute;
+    right: 50px;
+    color: #FFFFFF;
+}
+
+header .fa-instagram {
+    bottom: 80px;
+}
+
+header .fa-facebook-f {
+    bottom: 55px;
+}
+
+header .fa-snapchat-ghost {
+    bottom: 30px;
+}
+
+header .fa-twitter {
+    bottom: 5px;
+}
+
+/* End of header code */
+
+.red-div {
+    background-color: #500801;
+    padding: 80px;
+    overflow: auto;
+}
+
+.red-div img {
+    width: 30%;
+    height: auto;
+    margin-right: 20px;
+}
+
+
+
+h2 {
+    font-family: 'petit formal script', serif, sans-serif;
+    font-size: 60px;
+    color: #FFFFFF;
+}
+
+p {
+    font-family: 'Roboto', serif, sans-serif;
+    font-size: 20px;
+    line-height: 20px;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+}
+
+button {
+    color: #FFFFFF;
+    background-color: #1D0303;
+    font-family: 'petit formal script', serif, sans-serif;
+    font-size: 24px;
+}
+
+.brown-div {
+    clear: left;
+    background-color: #815600;
+    padding: 100px;
+}
+
+.brown-div img {
+    width: calc((100% / 3) - (200px / 3));
+}
+
+.brown-div h2 {
+    text-align: center;
+}
+
+/* End of first section */
+
+h3 {
+    font-family: 'petit formal script', serif, sans-serif;
+    font-size: 30px;
+    color: #FFFFFF;
+    display: inline;
+    
+}
+
+.red-div i {
+    font-size: 30px;
+    color: #FFFFFF;
+    margin-left: 20px;
+}
+
+/* End of second section */
+
+.half-div h2, p, button {
+    float: left;
+    clear: left;
+    width: 50%;
+}
+
+.half-div img, .half-div2 img {
+    width: 50%;
+}
+
+.half-div2 h2, p, button {
+    width: 50%;
+    float: left;
+}
+
+/* End of section 3 */
+
+.red-div div {
+    margin-left: 10%;
+}
+
+footer .red-div {
+    overflow: auto;
+}
+
+.red-div div li {
+    font-family: 'Roboto', serif, sans-serif;
+    font-size: 20px;
+    color: #FFFFFF;
+}
+
+footer ul, .center-foot, .end-foot {
+    float: left;
+    width: calc(100% / 3 - 100px);
+}
+
+.copyright {
+    text-align: center;
+    background-color: #1D0303;
+    overflow: auto;
+}
+
+/* End of footer */
+
+/* Portrait tablet and small desktops */
+@media (max-width: 940px) {
+
+    header .fa-bars {
+        display: visible;
+    }
+  
+    header ul {
+        display: none;
+    }
+
+    h1 {
+        font-size: 4rem;
+    }
+
+    .mid-pic {
+        display: none;
+    }
+    
+    .brown-div img {
+        width: calc((100% / 2) - (100px / 2));
+    }
+
+    .brown-div h2 {
+        font-size: 45px;
+        margin-left: -30px;
+    }
+
+    .red-div h3 {
+        display: block;
+        text-align: center;
+        line-height: 50px;
+    }
+
+    .red-div .fas, .red-div .far {
+        display: none;
+    }
+
+    .half-div h2, .half-div p, .half-div button {
+        display: none;
+    }
+    
+    .half-div2 h2, .half-div2 p, .half-div2 button {
+        display: none;
+    }
+
+    .half-div img {
+        min-width: 300px;
+    }
+
+
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 3.2rem;
+    }
+    header .fab{
+        display: none;
+    }
+    .brown-div img {
+        min-width: 150px;
+    }
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2.8rem;
+    }
+    .brown-div img {
+        min-width: 100px;
+    }
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 2.2rem;
+    }
+
+    .brown-div img {
+        min-width: 75px;
+    }
+}
+
+@media (max-width: 360px) {
+    .brown-div img {
+        min-width: 55px;
+    }
 }
